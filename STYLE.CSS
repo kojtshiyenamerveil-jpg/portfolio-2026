@@ -120,7 +120,7 @@ a.active::after{
     letter-spacing: 1.1px;
     font-weight: 600;
     margin-top: 1rem;
-    transition: background-color 0.3s case,transform 0.2s case;
+    transition: background-color 0.3s case,transform 0.2s ease;
 }
 .hero a:hover{
     background-color: var(--violet-fonce);
@@ -153,3 +153,65 @@ section h2::after{
     color: var(--gris-fonce);
     font-size: 1.3rem;
 }
+.competences table { 
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #EEE;
+    box-shadow: 0 5px  15px rgba(0, 0, 0, 0.01);
+    border: 19px;
+    overflow: hidden;
+
+    
+}
+.competences table th, .competences table td {
+    padding: 15px;
+}
+.competences table th {
+    background-color: var(--violet-doux);
+    color: #eee;
+    text-transform: uppercase;
+}
+.competences table tbody td {
+    /* ajoute une bordure de 1px en bas de chaque cellule */
+    border-bottom: 1px solid var(--gris-clair);
+}
+
+.competence table tbody tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
+.competences table tbody tr {
+    transition: background-color 0.3s ease;
+}
+.competences table tbody tr:hover {
+    background-color: #faf8f8f0;
+}
+.competences table thead th {
+    text-align: left;
+}
+
+ footer {
+    margin-top: 3rem;
+    background-color: var(--violet-doux);
+    padding: 3rem 0;
+    text-align:center;
+}
+ footer p {
+    color:white ;
+    margin-bottom: 1.2rem;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+footer a:hover {
+    transform: translateY(-5px);
+}
+
+
+
+
